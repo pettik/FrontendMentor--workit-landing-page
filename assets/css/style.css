@@ -1,3 +1,133 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap");
+
+:root {
+  /* Colors */
+  --green: #44faa1;
+  --purple-900: #24053e;
+  --purple-500: #584d62;
+  --purple-100: #fcf8ff;
+  --white: #fff;
+
+  /* Text presets */
+  --text-preset-1-ff: "Fraunces", serif;
+  --text-preset-1-fW: 600;
+  --text-preset-1-fs: 80px;
+  --text-preset-1-lh: 1;
+
+  --text-preset-2-ff: "Fraunces", serif;
+  --text-preset-2-fW: 600;
+  --text-preset-2-fs: 56px;
+  --text-preset-2-lh: 1.2;
+
+  --text-preset-3-ff: "Fraunces", serif;
+  --text-preset-3-fW: 600;
+  --text-preset-3-fs: 32px;
+  --text-preset-3-lh: 1.2;
+
+  --text-preset-4-ff: "Manrope", sans-serif;
+  --text-preset-4-fW: 400;
+  --text-preset-4-fs: 18px;
+  --text-preset-4-lh: 1.8;
+
+  --text-preset-5-ff: "Manrope", sans-serif;
+  --text-preset-5-fW: 400;
+  --text-preset-5-fs: 18px;
+  --text-preset-5-lh: 1.5;
+
+  /* Spacing scale (8px base) */
+
+  --space-100: 8px;
+  --space-150: 12px;
+  --space-200: 16px;
+  --space-250: 20px;
+  --space-350: 28px;
+  --space-400: 32px;
+  --space-500: 40px;
+  --space-550: 44px;
+  --space-700: 56px;
+  --space-800: 64px;
+  --space-1000: 80px;
+  --space-1100: 88px;
+  --space-1400: 112px;
+  --space-1600: 128px;
+  --space-1800: 144px;
+  --space-2100: 168px;
+  --space-3700: 296px;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
 body {
-  background-color: red;
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
 }
