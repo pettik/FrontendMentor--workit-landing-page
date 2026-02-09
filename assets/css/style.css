@@ -1,5 +1,19 @@
 /* Google Fonts Import */
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap");
+@font-face {
+  font-family: "Fraunces_144pt_SemiBold";
+  src: url("../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/static/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   /* Colors */
@@ -10,17 +24,17 @@
   --white: #fff;
 
   /* Text presets */
-  --text-preset-1-ff: "Fraunces", serif;
-  --text-preset-1-fW: 400;
+  --text-preset-1-ff: "Fraunces_144pt_SemiBold", serif;
+  --text-preset-1-fW: 600;
   --text-preset-1-fs: 48px;
   --text-preset-1-lh: 1;
 
-  --text-preset-2-ff: "Fraunces", serif;
+  --text-preset-2-ff: "Fraunces_144pt_SemiBold", serif;
   --text-preset-2-fW: 600;
   --text-preset-2-fs: 56px;
   --text-preset-2-lh: 1.2;
 
-  --text-preset-3-ff: "Fraunces", serif;
+  --text-preset-3-ff: "Fraunces_144pt_SemiBold", serif;
   --text-preset-3-fW: 600;
   --text-preset-3-fs: 32px;
   --text-preset-3-lh: 1.2;
