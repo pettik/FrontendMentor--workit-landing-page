@@ -11,8 +11,8 @@
 
   /* Text presets */
   --text-preset-1-ff: "Fraunces", serif;
-  --text-preset-1-fW: 600;
-  --text-preset-1-fs: 80px;
+  --text-preset-1-fW: 400;
+  --text-preset-1-fs: 48px;
   --text-preset-1-lh: 1;
 
   --text-preset-2-ff: "Fraunces", serif;
@@ -136,8 +136,17 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Base */
 
+.hero__bg-1,
+.hero__bg-2,
+.author-box__bg {
+  display: none;
+}
 main {
   font-family: var(--text-preset-4-ff);
 }
@@ -196,6 +205,16 @@ nav {
   font-family: var(--text-preset-1-ff);
   font-weight: var(--text-preset-1-fW);
   color: var(--white);
+  margin-bottom: var(--space-500);
+  line-height: var(--text-preset-1-lh);
+  font-size: var(--text-preset-1-fs);
+}
+
+header a {
+  background-color: var(--green);
+  color: var(--purple-900);
+  padding-inline: var(--space-400);
+  padding-block: var(--space-150);
 }
 
 /* ########################### SMAZAT ###########################  */
