@@ -36,7 +36,7 @@
 
   --text-preset-3-ff: "Fraunces_144pt_SemiBold", serif;
   --text-preset-3-fw: 600;
-  --text-preset-3-fs: 32px;
+  --text-preset-3-fs: 24px;
   --text-preset-3-lh: 1.2;
 
   --text-preset-4-ff: "Manrope", sans-serif;
@@ -78,8 +78,10 @@
 }
 
 /* 2. Remove default margin */
-*:not(dialog) {
+*:not(dialog),
+ul {
   margin: 0;
+  padding: 0;
 }
 
 /* 3. Enable keyword animations */
@@ -196,10 +198,10 @@ nav {
   position: relative;
   background-color: #24053e;
   color: white;
-  padding: 8rem 2rem 5rem;
+  padding: 8rem 2rem 10rem;
   text-align: center;
   overflow: hidden;
-  clip-path: ellipse(200% 100% at 50% 0%);
+  clip-path: ellipse(160% 100% at 50% 0%);
 }
 
 .underline--hero::after {
@@ -210,9 +212,12 @@ nav {
 }
 
 .hero__img {
+  position: absolute;
   display: block;
-  margin: 6rem auto 0;
-  max-width: 90%;
+  margin: -6rem auto 0;
+  max-width: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero h1 {
@@ -231,6 +236,24 @@ header a {
   padding-block: var(--space-150);
   line-height: var(--text-preset-4-lh);
   font-weight: var(--text-preset-4-fw);
+}
+
+.benefits {
+  margin-top: 10rem;
+  text-align: center;
+  color: var(--purple-900);
+  padding-left: var(--space-250);
+  padding-right: var(--space-250);
+
+  font-weight: var(--text-preset-1-fw);
+  margin-bottom: var(--space-500);
+}
+
+.benefits h3 {
+  font-family: var(--text-preset-3-ff);
+  font-weight: var(--text-preset-3-fw);
+  line-height: var(--text-preset-3-lh);
+  font-size: var(--text-preset-3-fs);
 }
 
 /* ########################### SMAZAT ###########################  */
