@@ -257,21 +257,20 @@ header a {
 }
 
 .number {
-  position: relative;
-}
-
-.number::before {
-  content: '';
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  top: 0%;
-  left: -180%;
-  border: 2px solid var(--purple-900);
-  border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border: 2px solid var(--purple-900);
+  border-radius: 50%;
+
+  font-weight: 700;
+  font-size: 1rem;
+
+  margin-bottom: 1.5rem;
 }
 
 /* ########################### SMAZAT ###########################  */
