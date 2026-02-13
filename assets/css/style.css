@@ -275,17 +275,17 @@ header a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   width: 3rem;
   height: 3rem;
   font-family: var(--text-preset-3-ff);
   border: 2px solid var(--purple-500);
   border-radius: 50%;
-
   font-weight: 700;
   font-size: 1.25rem;
-
   margin-bottom: 1.5rem;
+  background-color: var(--purple-100);
+  overflow: hidden;
+  clip-path: ellipse(160% 100% at 50% 0%);
 }
 
 /* ########################### SMAZAT ###########################  */
