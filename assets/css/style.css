@@ -1,15 +1,15 @@
 /* Google Fonts Import */
 @font-face {
-  font-family: "Fraunces_144pt_SemiBold";
-  src: url("../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf")
-    format("truetype");
+  font-family: 'Fraunces_144pt_SemiBold';
+  src: url('../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf')
+    format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Manrope";
-  src: url("../fonts/manrope/static/Manrope-Regular.ttf") format("truetype");
+  font-family: 'Manrope';
+  src: url('../fonts/manrope/static/Manrope-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,27 +24,27 @@
   --white: #fff;
 
   /* Text presets */
-  --text-preset-1-ff: "Fraunces_144pt_SemiBold", serif;
+  --text-preset-1-ff: 'Fraunces_144pt_SemiBold', serif;
   --text-preset-1-fw: 600;
   --text-preset-1-fs: 48px;
   --text-preset-1-lh: 1;
 
-  --text-preset-2-ff: "Fraunces_144pt_SemiBold", serif;
+  --text-preset-2-ff: 'Fraunces_144pt_SemiBold', serif;
   --text-preset-2-fw: 600;
   --text-preset-2-fs: 56px;
   --text-preset-2-lh: 1.2;
 
-  --text-preset-3-ff: "Fraunces_144pt_SemiBold", serif;
+  --text-preset-3-ff: 'Fraunces_144pt_SemiBold', serif;
   --text-preset-3-fw: 600;
   --text-preset-3-fs: 24px;
   --text-preset-3-lh: 1.2;
 
-  --text-preset-4-ff: "Manrope", sans-serif;
+  --text-preset-4-ff: 'Manrope', sans-serif;
   --text-preset-4-fw: 400;
-  --text-preset-4-fs: 18px;
+  --text-preset-4-fs: 16px;
   --text-preset-4-lh: 1.8;
 
-  --text-preset-5-ff: "Manrope", sans-serif;
+  --text-preset-5-ff: 'Manrope', sans-serif;
   --text-preset-5-fw: 400;
   --text-preset-5-fs: 18px;
   --text-preset-5-lh: 1.5;
@@ -190,7 +190,7 @@ nav {
 }
 
 .underline::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -0.15em;
@@ -201,20 +201,23 @@ nav {
 }
 
 .hero {
-  position: relative;
   background-color: var(--purple-900);
   color: white;
-  padding: 8rem 2rem 10rem;
+  padding: 8rem 2rem 8rem;
   text-align: center;
   overflow: hidden;
 }
 
-.curve {
+.wave {
   width: 100%;
-  height: 24px;
-  background: #24053e;
-  border-bottom-left-radius: 100% 24px;
-  border-bottom-right-radius: 100% 24px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.wave svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .underline--hero::after {
@@ -234,7 +237,7 @@ nav {
 
 .img_box {
   position: absolute;
-  top: 24rem;
+  top: 25rem;
   left: 0;
   width: 100%;
   z-index: 1;
@@ -262,7 +265,7 @@ header a {
   display: flex;
   flex-direction: column;
   row-gap: var(--space-400);
-  margin-top: -2rem;
+
   text-align: center;
   color: var(--purple-900);
 
@@ -271,7 +274,7 @@ header a {
   background-color: var(--purple-100);
   overflow: hidden;
   clip-path: ellipse(190% 100% at 50% 0%);
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 5rem;
 }
 
@@ -302,6 +305,10 @@ header a {
   font-weight: 700;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
+}
+
+.author-box {
+  padding-top: var(--space-1400);
 }
 
 /* ########################### SMAZAT ###########################  */
