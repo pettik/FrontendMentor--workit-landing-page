@@ -343,6 +343,28 @@ header a {
   line-height: var(--text-preset-4-lh);
   font-weight: var(--text-preset-4-fw);
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-1000);
+  background-color: var(--purple-100);
+  color: var(--white);
+}
+
+footer > img {
+  margin-bottom: var(--space-700);
+}
+
+.socail-icons {
+  display: flex;
+  gap: var(--space-350);
+  align-items: center;
+  color: var(--purple-500);
+}
+
 /* ########################### SMAZAT ###########################  */
 #flying-banner {
   position: fixed;
