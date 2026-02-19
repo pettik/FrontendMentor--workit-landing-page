@@ -381,7 +381,20 @@ footer > img {
   display: flex;
   gap: var(--space-350);
   align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--purple-500);
+  transition: fill 0.3s ease;
   color: var(--purple-500);
+  transition: fill 0.4s ease;
+  cursor: pointer;
+}
+
+.socail-icons li:hover .icon {
+  fill: var(--purple-900);
 }
 
 /* ########################### SMAZAT ###########################  */
