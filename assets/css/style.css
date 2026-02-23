@@ -306,17 +306,30 @@ header a:hover {
 }
 
 .number {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  font-family: var(--text-preset-3-ff);
+  /* velikost kruhu */
+  inline-size: 3rem;
+  block-size: 3rem;
+  flex: 0 0 auto;
+
+  /* dokonalé vycentrování čísla */
+  display: inline-grid;
+  place-items: center;
+
+  /* kruh */
   border: 2px solid var(--purple-500);
   border-radius: 50%;
+
+  /* typografie */
+  font-family: var(--text-preset-3-ff);
   font-weight: 700;
   font-size: 1.25rem;
+  line-height: 1; /* důležité, aby číslo “nesedělo níž” */
+
+  /* tvé odsazení */
   margin-bottom: 1.5rem;
+
+  /* jistota, že border nezvětší rozměr kruhu */
+  box-sizing: border-box;
 }
 
 .author-box {
@@ -420,6 +433,19 @@ footer > img {
     top: -100px;
     left: 93%;
     width: 141px;
+  }
+
+  .benefits li {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  li > div {
+    text-align: left;
+  }
+
+  li > span {
+    margin: 2rem;
   }
 }
 
