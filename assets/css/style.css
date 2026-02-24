@@ -1,15 +1,15 @@
 /* Google Fonts Import */
 @font-face {
-  font-family: 'Fraunces_144pt_SemiBold';
-  src: url('../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf')
-    format('truetype');
+  font-family: "Fraunces_144pt_SemiBold";
+  src: url("../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf")
+    format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Manrope';
-  src: url('../fonts/manrope/static/Manrope-Regular.ttf') format('truetype');
+  font-family: "Manrope";
+  src: url("../fonts/manrope/static/Manrope-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,27 +24,27 @@
   --white: #fff;
 
   /* Text presets */
-  --text-preset-1-ff: 'Fraunces_144pt_SemiBold', serif;
+  --text-preset-1-ff: "Fraunces_144pt_SemiBold", serif;
   --text-preset-1-fw: 600;
   --text-preset-1-fs: 48px;
   --text-preset-1-lh: 1;
 
-  --text-preset-2-ff: 'Fraunces_144pt_SemiBold', serif;
+  --text-preset-2-ff: "Fraunces_144pt_SemiBold", serif;
   --text-preset-2-fw: 600;
   --text-preset-2-fs: 32px;
   --text-preset-2-lh: 1.2;
 
-  --text-preset-3-ff: 'Fraunces_144pt_SemiBold', serif;
+  --text-preset-3-ff: "Fraunces_144pt_SemiBold", serif;
   --text-preset-3-fw: 600;
   --text-preset-3-fs: 24px;
   --text-preset-3-lh: 1.2;
 
-  --text-preset-4-ff: 'Manrope', sans-serif;
+  --text-preset-4-ff: "Manrope", sans-serif;
   --text-preset-4-fw: 400;
   --text-preset-4-fs: 16px;
   --text-preset-4-lh: 1.8;
 
-  --text-preset-5-ff: 'Manrope', sans-serif;
+  --text-preset-5-ff: "Manrope", sans-serif;
   --text-preset-5-fw: 400;
   --text-preset-5-fs: 18px;
   --text-preset-5-lh: 1.5;
@@ -192,7 +192,7 @@ nav {
 }
 
 .underline::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -0.15em;
@@ -435,9 +435,18 @@ footer > img {
     width: 141px;
   }
 
+  .benefits {
+    padding-left: var(--space-550);
+    padding-right: var(--space-550);
+  }
+
   .benefits li {
     display: flex;
     align-items: flex-start;
+  }
+
+  .benefits .number {
+    margin-left: 0;
   }
 
   li > div {
