@@ -385,8 +385,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: var(--space-1000);
-  background-color: var(--purple-100);
-  color: var(--white);
+  background-color: var(--white);
 }
 
 footer > img {
@@ -435,7 +434,8 @@ footer > img {
     width: 141px;
   }
 
-  .benefits {
+  .benefits,
+  .author-box {
     padding-left: var(--space-550);
     padding-right: var(--space-550);
   }
@@ -455,6 +455,18 @@ footer > img {
 
   li > span {
     margin: 2rem;
+  }
+
+  .author-box {
+    margin-top: var(--space-1400);
+  }
+
+  .author-box img {
+    max-width: 280px;
+  }
+  .author-box article {
+    margin-left: 176px;
+    margin-top: -7rem;
   }
 }
 
