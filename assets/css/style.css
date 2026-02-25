@@ -467,6 +467,11 @@ footer > img {
   .author-box article {
     margin-left: 176px;
     margin-top: -7rem;
+    text-align: left;
+  }
+
+  .author-box article h2 {
+    font-size: var(--text-preset-1-fs);
   }
 }
 
