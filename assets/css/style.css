@@ -481,6 +481,45 @@ footer > img {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  :root {
+    --text-preset-1-fs: 80px;
+  }
+  nav {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: var(--space-1000);
+  }
+
+  .hero {
+    padding-top: var(--space-700);
+  }
+
+  .hero__img {
+    max-width: 767px;
+  }
+
+  .hero__bg-1 {
+    top: -300px;
+    left: -80px;
+  }
+  .benefits {
+    flex-direction: row;
+    column-gap: var(--space-400);
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .benefits li {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits li div {
+    text-align: center;
+  }
+}
+
 /* ########################### SMAZAT ###########################  */
 #flying-banner {
   position: fixed;
