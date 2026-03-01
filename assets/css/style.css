@@ -484,19 +484,39 @@ footer > img {
 @media only screen and (min-width: 1440px) {
   :root {
     --text-preset-1-fs: 80px;
+
+    --text-preset-5-ff: 'Manrope', sans-serif;
+    --text-preset-5-fw: 600;
+    --text-preset-5-fs: 18px;
+    --text-preset-5-lh: 1.8;
   }
   nav {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: var(--space-1000);
+    font-size: var(--text-preset-5-fs);
+    line-height: var(--text-preset-5-lh);
+    font-weight: var(--text-preset-5-fw);
+  }
+
+  nav > img {
+    width: 95.76px;
+  }
+
+  header a {
+    font-size: var(--text-preset-5-fs);
+    line-height: var(--text-preset-5-lh);
+    font-weight: var(--text-preset-5-fw);
   }
 
   .hero {
     padding-top: var(--space-700);
+    padding: 8rem 2rem 20rem;
   }
 
   .hero__img {
     max-width: 767px;
+    margin-top: 10rem;
   }
 
   .hero__bg-1 {
