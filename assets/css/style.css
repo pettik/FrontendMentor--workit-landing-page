@@ -528,6 +528,7 @@ footer > img {
     column-gap: var(--space-400);
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 10rem;
   }
 
   .benefits li {
@@ -537,6 +538,11 @@ footer > img {
 
   .benefits li div {
     text-align: center;
+  }
+
+  .number {
+    font-size: 24px;
+    line-height: 0.4;
   }
 }
 
