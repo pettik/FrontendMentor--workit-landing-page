@@ -531,6 +531,11 @@ footer > img {
     padding-top: 10rem;
   }
 
+  .benefits h3 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
   .benefits li {
     flex-direction: column;
     align-items: center;
