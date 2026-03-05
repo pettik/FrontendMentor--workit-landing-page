@@ -159,8 +159,7 @@ ul {
 /* Base */
 
 .hero__bg-1,
-.hero__bg-2,
-.author-box__bg {
+.hero__bg-2 {
   display: none;
 }
 main {
@@ -336,6 +335,8 @@ header a:hover {
   padding-top: var(--space-1400);
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .author-box article {
@@ -414,8 +415,7 @@ footer > img {
 
 @media only screen and (min-width: 768px) {
   .hero__bg-1,
-  .hero__bg-2,
-  .author-box__bg {
+  .hero__bg-2 {
     display: block;
     position: absolute;
     width: 270px;
@@ -560,6 +560,7 @@ footer > img {
   .author-box img {
     max-width: 447px;
     max-height: 447px;
+    margin-left: 5%;
   }
 
   .author-box article {
