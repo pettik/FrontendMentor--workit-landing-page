@@ -145,7 +145,7 @@ main {
   padding: 0 1.5rem;
 }
 
-main > div {
+.features {
   max-width: 1120px;
   margin: auto;
   padding: 4rem 0;
@@ -154,7 +154,7 @@ main > div {
   gap: 2rem;
 }
 
-section {
+.feature {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -163,7 +163,7 @@ section {
   color: var(--color-slate-900);
 }
 
-section h2 {
+.feature h2 {
   margin-bottom: 1rem;
 }
 
@@ -251,7 +251,7 @@ footer img {
 }
 
 .footer__logo-socials a:hover {
-  filter: hue-rotate(40deg) brightness(150%);
+  filter: hue-rotate(40deg) brightness(45%);
 }
 
 @media screen and (max-height: 620px) {
@@ -319,12 +319,12 @@ footer img {
     transform: translateY(50%);
   }
 
-  section {
+  .feature {
     flex-direction: row;
     text-align: left;
   }
 
-  section h2 {
+  .feature h2 {
     font-size: 1.75rem;
   }
 }
@@ -342,18 +342,18 @@ footer img {
     font-size: 1.5rem;
   }
 
-  main > div {
+  .features {
     flex-direction: row;
   }
 
-  section {
+  .feature {
     flex-direction: column;
     flex: 1;
     text-align: center;
     gap: 3.5rem;
   }
 
-  section h2 {
+  .feature h2 {
     font-size: 2rem;
     margin-bottom: 1.75rem;
   }
