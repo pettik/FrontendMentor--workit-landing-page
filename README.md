@@ -1,5 +1,7 @@
 ﻿# Frontend Mentor - Workit landing page
 
+<img src="./preview.jpg">
+
 ## Project overview
 
 This is a final solution of the **Workit landing page** from [Frontend Mentor](https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu).
