@@ -1,14 +1,14 @@
 @font-face {
   font-family: Manrope;
-  src: url('../fonts/manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+  src: url("../fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: Fraunces;
-  src: url('../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf')
-    format('truetype');
+  src: url("../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -75,7 +75,7 @@ header {
 }
 
 header .bg-hero::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -272,15 +272,15 @@ footer img {
   }
 
   header::before {
-    left: -30px;
+    left: -210px;
     top: 10%;
-    content: url('../img/bg-pattern-1.svg');
+    content: url("../images/bg-pattern-1.svg");
   }
 
   header::after {
-    right: 0;
+    right: -10%;
     top: 40%;
-    content: url('../img/bg-pattern-2.svg');
+    content: url("../images/bg-pattern-2.svg");
   }
 
   header h1 {
@@ -295,6 +295,8 @@ footer img {
 
   article h2 {
     font-size: 3rem;
+    text-align: left;
+    width: 100%;
   }
 
   article img {
@@ -309,10 +311,11 @@ footer img {
     grid-row: 1;
     grid-column: 2/4;
     position: relative;
+    text-align: left;
   }
 
   .article__text::after {
-    content: url('../img/bg-pattern-3.svg');
+    content: url("../images/bg-pattern-3.svg");
     position: absolute;
     right: 0;
     bottom: 0;
@@ -330,6 +333,9 @@ footer img {
 }
 
 @media screen and (min-width: 1400px) {
+  header::after {
+    right: -2%;
+  }
   header h1 {
     font-size: 5rem;
   }
