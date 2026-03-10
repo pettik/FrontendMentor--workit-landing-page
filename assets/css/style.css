@@ -1,14 +1,14 @@
 @font-face {
   font-family: Manrope;
-  src: url("../fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url('../fonts/manrope/Manrope-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: Fraunces;
-  src: url("../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
-    format("truetype");
+  src: url('../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf')
+    format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
@@ -32,6 +32,7 @@ html {
 
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -75,7 +76,7 @@ header {
 }
 
 header .bg-hero::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -254,6 +255,18 @@ footer img {
   filter: hue-rotate(40deg) brightness(45%);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media screen and (max-height: 620px) {
   header {
     height: 620px;
@@ -274,13 +287,13 @@ footer img {
   header::before {
     left: -210px;
     top: 10%;
-    content: url("../images/bg-pattern-1.svg");
+    content: url('../images/bg-pattern-1.svg');
   }
 
   header::after {
     right: -10%;
     top: 40%;
-    content: url("../images/bg-pattern-2.svg");
+    content: url('../images/bg-pattern-2.svg');
   }
 
   header h1 {
@@ -315,7 +328,7 @@ footer img {
   }
 
   .article__text::after {
-    content: url("../images/bg-pattern-3.svg");
+    content: url('../images/bg-pattern-3.svg');
     position: absolute;
     right: 0;
     bottom: 0;
