@@ -47,8 +47,13 @@ a:not(.footer__logo-socials a) {
 }
 
 a {
-  text-decoration: none;
   font-weight: 700;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-green);
+  outline-offset: 0.25rem;
+  border-radius: 0.25rem;
 }
 
 p {
